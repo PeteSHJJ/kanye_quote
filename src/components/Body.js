@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 function Body() {
 
     const [hasError, setErrors] = useState(false);
-    const [quote, setQuote] = useState({})
+    const [quote, setQuote] = useState()
 
     async function fetchData() {
         const res = await fetch('https://api.kanye.rest');
